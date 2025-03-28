@@ -1,0 +1,118 @@
+{
+    "signature": "JITFunction(ibm_triton_lib.kernels.triton_flash_attention:attn_fwd)",
+    "total_bench_time_s": 39248.85517477989,
+    "evaluated_configs": 360,
+    "keys": [
+        "HQ",
+        "HK",
+        "IS_CAUSAL",
+        "dropout_p",
+        "BLOCK_DMODEL",
+        "stride_qz",
+        "stride_qh",
+        "stride_qm",
+        "stride_qk",
+        "stride_kz",
+        "stride_kh",
+        "stride_kn",
+        "stride_kk",
+        "stride_vz",
+        "stride_vh",
+        "stride_vn",
+        "stride_vk",
+        "stride_oz",
+        "stride_oh",
+        "stride_om",
+        "stride_on",
+        "stride_bz",
+        "stride_bh",
+        "stride_bm",
+        "stride_bn",
+        "stride_az",
+        "stride_ah",
+        "MAX_SEQLENS_Q",
+        "MAX_SEQLENS_K",
+        "VARLEN",
+        "ACTUAL_BLOCK_DMODEL"
+    ],
+    "cache": {
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '32', '32', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: True, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '32', '32', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '64', '64', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '64', '64', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: True, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '128', '128', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: True, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 2, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '128', '128', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: True, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 2, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '256', '256', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: True, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 2, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '256', '256', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 16, BLOCK_N: 16, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 2, num_ctas: 1, num_stages: 2, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '512', '512', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 128, BLOCK_N: 128, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 4, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '512', '512', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 128, BLOCK_N: 128, PRE_LOAD_V: True, GRID_CU_MULTIP: 2, num_warps: 4, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '1024', '1024', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 128, BLOCK_N: 128, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 4, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '1024', '1024', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 128, BLOCK_N: 128, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 4, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '2048', '2048', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 256, BLOCK_N: 64, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 8, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '2048', '2048', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 256, BLOCK_N: 64, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 8, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '4096', '4096', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 256, BLOCK_N: 128, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 8, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '4096', '4096', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 256, BLOCK_N: 128, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 8, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None",
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '8192', '8192', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": "BLOCK_M: 128, BLOCK_N: 128, PRE_LOAD_V: False, GRID_CU_MULTIP: 2, num_warps: 4, num_ctas: 1, num_stages: 1, num_buffers_warp_spec: 0, num_consumer_groups: 0, reg_dec_producer: 0, reg_inc_consumer: 0, maxnreg: None"
+    },
+    "timings": {
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '32', '32', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.004540686961263418
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '32', '32', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.004564547911286354
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '64', '64', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.006356054451316595
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '64', '64', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.0063460529781877995
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '128', '128', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.009617584757506847
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '128', '128', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.009643974713981152
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '256', '256', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.01865134947001934
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '256', '256', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.017582973465323448
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '512', '512', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.034268032759428024
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '512', '512', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.0316285714507103
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '1024', '1024', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.06389839947223663
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '1024', '1024', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.060926083475351334
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '2048', '2048', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.17798861861228943
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '2048', '2048', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.1733708679676056
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '4096', '4096', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.6187087893486023
+        ],
+        "('32', '8', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '1024', '1', '0', '128', '1', '1024', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '4096', '4096', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            0.6001371145248413
+        ],
+        "('32', '32', 'True', '0.0', '128', '0', '128', '4096', '1', '0', '128', '4096', '1', '0', '128', '1', '4096', '0', '128', '4096', '1', '0', '0', '0', '0', '0', '0', '8192', '8192', 'True', '128', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32', 'torch.int32')": [
+            2.1069486141204834
+        ]
+    },
+    "timings_data": {
+        "labels": [
+            "ms"
+        ],
+        "rep_t_ms": 100,
+        "warmup_t_ms": 25,
+        "cuda_graphs": true
+    }
+}
