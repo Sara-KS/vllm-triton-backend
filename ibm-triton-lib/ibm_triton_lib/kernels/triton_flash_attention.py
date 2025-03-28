@@ -749,10 +749,13 @@ select_prepare_informed_fallback = lambda: _select_informed_fallback()[1]
             # lambda kwarg: kwarg['PRE_LOAD_V'] == True or 'H100' in gpu_name,   # to ensure pre load for all other GPUs
             lambda kwarg: kwarg["BLOCK_N"] >= 32 or "H100" not in gpu_name,
         ],
-        num_warps=[2, 4, 8],
-        num_stages=[1, 2, 4, 6, 8],
+        num_warps=[2, 4, 8, 16],
+        #num_stages=[1, 2, 4, 6, 8],
+        num_stages=[1, 2, 3],
+        waves_per_eu=[1, 2, 3, 4],
         num_ctas=[1],  # although supported by H100, it causes a segfault if >1
         # TODO: add warp specialization parameters
+        matrix_instr_nonkdim = [32] #v_mfma_f32_32x32x8_f16 present in amdgcn
     ),
     key=[
         "HQ",
