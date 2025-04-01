@@ -739,6 +739,7 @@ select_prepare_informed_fallback = lambda: _select_informed_fallback()[1]
             "BLOCK_N": [16, 32, 64, 128, 256],
             "PRE_LOAD_V": [True, False],
             "GRID_CU_MULTIP": [2],  # only relevant for persistent
+            "waves_per_eu": [1, 2, 3, 4], #TO DO add matrix_instr_nonkim config
         },
         kwarg_conditions=[
             lambda kwarg: kwarg["BLOCK_M"] >= kwarg["BLOCK_N"],
@@ -752,10 +753,8 @@ select_prepare_informed_fallback = lambda: _select_informed_fallback()[1]
         num_warps=[2, 4, 8, 16],
         #num_stages=[1, 2, 4, 6, 8],
         num_stages=[1, 2, 3],
-        waves_per_eu=[1, 2, 3, 4],
         num_ctas=[1],  # although supported by H100, it causes a segfault if >1
         # TODO: add warp specialization parameters
-        matrix_instr_nonkdim = [32] #v_mfma_f32_32x32x8_f16 present in amdgcn
     ),
     key=[
         "HQ",
